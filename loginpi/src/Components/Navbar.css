@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+
+.navbar {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  box-shadow: 10px 0px 10px #f0f0f0;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.nav-icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon-container img {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.nav-icon-container img:first-child {
+  margin-right: 1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-right: 100rem;
+  align-items: center;
+}
+
+nav ul li {
+    
+  color: #838383;
+  margin-left: 2rem;
+  cursor: pointer;
+ align-items: center;
+}
+
+nav ul li:hover {
+  transform: translateY(-5px);
+  transition: all 0.2s;
+  font-weight: bold;
+}
+
+.menu-button {
+  display: none;
+}
+
+.ajuda {
+  margin-right: 92px !important;
+  margin-top: 10px;
+}
+
+.perfil {
+  margin-right: 200px;
+  margin-top: 14px;
+}
+
+.notificacao {
+  margin-right: 150px;
+  margin-top: 15px;
+}
+
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+ 
+}
+
+.menu-button i {
+  font-size: 1.5rem;
+  color: #333;
+ 
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .header-inner-content {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+  }
+
+  .header-inner-content.show-menu {
+    display: block !important;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 1rem;
+   align-items: center;
+   margin-right: 2rem;
+  }
+
+  nav ul li {
+    margin-bottom: 1rem;
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    font-weight: bold;
+  }
+}
+.nav-icon-container {
+    display: flex;
+    align-items: center;
+  }
+  .menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px; 
+    font-size: 1.5rem;
+    color: #333;
+    
+  }
+  
+  .menu-button:focus {
+    outline: none;
+  }
+  
+  .menu-button i {
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+  }
+  .menu-button {
+      position: fixed;
+      top: 20px; 
+      right: 20px; 
+      z-index: 1000; 
+    }
+  
